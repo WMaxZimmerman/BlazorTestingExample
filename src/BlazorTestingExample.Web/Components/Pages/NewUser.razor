@@ -1,0 +1,46 @@
+﻿@page "/NewUser"
+@using BlazorBootstrap
+@using BlazorTestingExample.Shared.Models
+<h3>New User</h3>
+
+<div>
+    <label>
+        First Name:
+        <InputText @bind-Value=newUser.FirstName />
+    </label>
+</div>
+<div>
+    <label>
+        Last Name:
+        <InputText @bind-Value=newUser.LastName />
+    </label>
+</div>
+<div>
+    <button value="Submit" class="btn btn-primary" @onclick="SubmitUser">Submit</button>
+</div>
+
+<Modal Title="Modal title">
+    <BodyTemplate>
+        @message
+    </BodyTemplate>
+    <FooterTemplate>
+        <Button Color="ButtonColor.Secondary" @onclick="OnHideModalClick">Close</Button>
+    </FooterTemplate>
+</Modal>
+
+@code {
+    private Modal modal = default!;
+    private User newUser = new ();
+    private string message = "";
+
+    private async Task SubmitUser()
+    {
+        message = newUser.ToString();
+        await modal.ShowAsync();
+    }
+
+    private async Task OnHideModalClick()
+    {
+        await modal.HideAsync();
+    }
+}
