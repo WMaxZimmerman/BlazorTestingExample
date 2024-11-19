@@ -1,7 +1,12 @@
-﻿namespace BlazorTestingExample.Shared.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BlazorTestingExample.Shared.Models;
 
 public record User
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    [Required(ErrorMessage = "First Name is required.")]
+    public string FirstName { get; set; } = "";
+
+    [Required(ErrorMessage = "Last Name is required.")]
+    public string LastName { get; set; } = "";
 }
