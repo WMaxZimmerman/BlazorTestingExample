@@ -1,0 +1,42 @@
+﻿@page "/userform"
+@using BlazorTestingExample.Shared.Models
+@using BlazorTestingExample.Wasm.Clients
+@inject IMyApiClient Client
+
+<h3>User Form</h3>
+
+<EditForm Model="user" OnValidSubmit="HandleValidSubmit" FormName="UserForm">
+    <DataAnnotationsValidator />
+
+    <div>
+        <label>First Name:</label>
+        <InputText @bind-Value="user.FirstName" placeholder="First Name" />
+        <ValidationMessage For="() => user.FirstName" />
+    </div>
+
+    <div>
+        <label>Last Name:</label>
+        <InputText @bind-Value="user.LastName" placeholder="Last Name" />
+        <ValidationMessage For="() => user.LastName" />
+    </div>
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+@if (submitted)
+{
+    <p>@message</p>
+}
+
+@code {
+    private UserDto user { get; set; } = new();
+    private bool submitted = false;
+    private string message = "";
+
+    private async Task HandleValidSubmit()
+    {
+        var newUser = await Client.AddNewUser(user);
+        message = $"Submitted: {newUser.FirstName} {newUser.LastName} ({newUser.Id})";
+        submitted = true;
+    }
+}

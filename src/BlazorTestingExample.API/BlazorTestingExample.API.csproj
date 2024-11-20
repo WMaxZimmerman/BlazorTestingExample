@@ -9,18 +9,17 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
-        <PackageReference Include="EFCore.NamingConventions" Version="8.0.3" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.10" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\BlazorTestingExample.Core\BlazorTestingExample.Core.csproj" />
       <ProjectReference Include="..\BlazorTestingExample.Shared\BlazorTestingExample.Shared.csproj" />
+      <ProjectReference Include="..\BlazorTestingExample.Wasm\BlazorTestingExample.Wasm.csproj" />
     </ItemGroup>
 
 </Project>

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.API", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.Core", "BlazorTestingExample.Core\BlazorTestingExample.Core.csproj", "{5A0164E7-315A-4557-86CA-BEB6DA64A417}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.Wasm", "BlazorTestingExample.Wasm\BlazorTestingExample.Wasm.csproj", "{C61F6A32-2496-4034-8D89-9FC67B02AE79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61F6A32-2496-4034-8D89-9FC67B02AE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61F6A32-2496-4034-8D89-9FC67B02AE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61F6A32-2496-4034-8D89-9FC67B02AE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61F6A32-2496-4034-8D89-9FC67B02AE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -27,7 +27,8 @@ var context = services.GetRequiredService<BlazorTestingExampleDbContext>();
 context.Database.Migrate();
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
+app.UseBlazorFrameworkFiles();
 
 app.UseRouting();
 app.MapControllers();
