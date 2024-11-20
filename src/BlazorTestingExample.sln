@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.Web", "BlazorTestingExample.Web\BlazorTestingExample.Web.csproj", "{EA183828-F9DC-45C3-BE0C-E4D852CF7463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.API", "BlazorTestingExample.API\BlazorTestingExample.API.csproj", "{8033A528-F215-4966-B08B-359EE094AE64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestingExample.Core", "BlazorTestingExample.Core\BlazorTestingExample.Core.csproj", "{5A0164E7-315A-4557-86CA-BEB6DA64A417}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{EA183828-F9DC-45C3-BE0C-E4D852CF7463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA183828-F9DC-45C3-BE0C-E4D852CF7463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA183828-F9DC-45C3-BE0C-E4D852CF7463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8033A528-F215-4966-B08B-359EE094AE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8033A528-F215-4966-B08B-359EE094AE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8033A528-F215-4966-B08B-359EE094AE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8033A528-F215-4966-B08B-359EE094AE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0164E7-315A-4557-86CA-BEB6DA64A417}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,8 +2,9 @@
 
 namespace BlazorTestingExample.Shared.Models;
 
-public record User
+public record UserDto
 {
+    public Guid Id { get; set; } = Guid.Empty;
     [Required(ErrorMessage = "First Name is required.")]
     public string FirstName { get; set; } = "";
 

@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorTestingExample.Core\BlazorTestingExample.Core.csproj" />
     <ProjectReference Include="..\BlazorTestingExample.Shared\BlazorTestingExample.Shared.csproj" />
   </ItemGroup>
 

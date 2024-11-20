@@ -1,5 +1,7 @@
 ﻿@page "/userform"
+@using BlazorTestingExample.Core.User
 @using BlazorTestingExample.Shared.Models
+@inject IUserService UserService
 
 <h3>User Form</h3>
 
@@ -23,15 +25,18 @@
 
 @if (submitted)
 {
-    <p>Submitted: @user.FirstName @user.LastName</p>
+    <p>@message</p>
 }
 
 @code {
-    private User user = new(){FirstName = "", LastName = ""};
+    private UserDto user { get; set; } = new();
     private bool submitted = false;
+    private string message = "";
 
     private void HandleValidSubmit()
     {
+        var newUser = UserService.AddUser(user);
+        message = $"Submitted: {newUser.FirstName} {newUser.LastName} ({newUser.Id})";
         submitted = true;
     }
 }
